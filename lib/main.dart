@@ -10,7 +10,7 @@ class PhotoGalleryApp extends StatelessWidget {
     return MaterialApp(
       title: 'Photo Gallery',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blue,
       ),
       home: PhotoGalleryScreen(),
     );
@@ -42,6 +42,7 @@ class PhotoGalleryScreen extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: TextField(
                 decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.search),
                   hintText: 'Search for photos',
                   border: OutlineInputBorder(),
                   contentPadding:
@@ -50,45 +51,135 @@ class PhotoGalleryScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 16.0),
-            Wrap(
-              spacing: 8.0,
-              runSpacing: 8.0,
+            Row(
               children: [
-                ElevatedButton(
-                  onPressed: () {
-                    showSnackBar(context, 'Clicked on photo 1!');
-                  },
-                  child: Column(
-                    children: [
-                      Image.network(
-                        'https://freepngimg.com/thumb/tree/1-tree-png-image-download-picture.png',
-                        width: 100,
-                        height: 100,
-                        fit: BoxFit.cover,
-                      ),
-                      SizedBox(height: 8.0),
-                      Text('Photo 1'),
-                    ],
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      showSnackBar(context, 'Clicked on photo 1!');
+                    },
+                    child: Column(
+                      children: [
+                        Image.network(
+                          'https://example.com/photo1.jpg',
+                          width: 100,
+                          height: 100,
+                          fit: BoxFit.cover,
+                        ),
+                        SizedBox(height: 8.0),
+                        Text('Photo 1'),
+                      ],
+                    ),
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    showSnackBar(context, 'Clicked on photo 2!');
-                  },
-                  child: Column(
-                    children: [
-                      Image.network(
-                        'https://freepngimg.com/thumb/tree/12-tree-png-image-download-picture.png',
-                        width: 100,
-                        height: 100,
-                        fit: BoxFit.cover,
-                      ),
-                      SizedBox(height: 8.0),
-                      Text('Photo 2'),
-                    ],
+                SizedBox(width: 8.0),
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      showSnackBar(context, 'Clicked on photo 2!');
+                    },
+                    child: Column(
+                      children: [
+                        Image.network(
+                          'https://example.com/photo2.jpg',
+                          width: 100,
+                          height: 100,
+                          fit: BoxFit.cover,
+                        ),
+                        SizedBox(height: 8.0),
+                        Text('Photo 2'),
+                      ],
+                    ),
                   ),
                 ),
-                // Add more photos as needed
+              ],
+            ),
+            SizedBox(height: 8.0),
+            Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      showSnackBar(context, 'Clicked on photo 3!');
+                    },
+                    child: Column(
+                      children: [
+                        Image.network(
+                          'https://example.com/photo3.jpg',
+                          width: 100,
+                          height: 100,
+                          fit: BoxFit.cover,
+                        ),
+                        SizedBox(height: 8.0),
+                        Text('Photo 3'),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(width: 8.0),
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      showSnackBar(context, 'Clicked on photo 4!');
+                    },
+                    child: Column(
+                      children: [
+                        Image.network(
+                          'https://example.com/photo4.jpg',
+                          width: 100,
+                          height: 100,
+                          fit: BoxFit.cover,
+                        ),
+                        SizedBox(height: 8.0),
+                        Text('Photo 4'),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 8.0),
+            Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      showSnackBar(context, 'Clicked on photo 5!');
+                    },
+                    child: Column(
+                      children: [
+                        Image.network(
+                          'https://example.com/photo5.jpg',
+                          width: 100,
+                          height: 100,
+                          fit: BoxFit.cover,
+                        ),
+                        SizedBox(height: 8.0),
+                        Text('Photo 5'),
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(width: 8.0),
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      showSnackBar(context, 'Clicked on photo 6!');
+                    },
+                    child: Column(
+                      children: [
+                        Image.network(
+                          'https://example.com/photo6.jpg',
+                          width: 100,
+                          height: 100,
+                          fit: BoxFit.cover,
+                        ),
+                        SizedBox(height: 8.0),
+                        Text('Photo 6'),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
             SizedBox(height: 16.0),
@@ -106,7 +197,11 @@ class PhotoGalleryScreen extends StatelessWidget {
                   title: Text('Photo 2'),
                   subtitle: Text('Description for Photo 2'),
                 ),
-                // Add more list items as needed
+                ListTile(
+                  leading: Icon(Icons.photo),
+                  title: Text('Photo 3'),
+                  subtitle: Text('Description for Photo 3'),
+                ),
               ],
             ),
           ],

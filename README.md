@@ -1,16 +1,32 @@
-# photo_gallery
+# Project Name
 
-Ostad Module 06 Assignment
+A brief description of your project.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+![Screenshot 1](screenshot/photosnack.png)
 
-A few resources to get you started if this is your first Flutter project:
+Photo Description with SnackBar Message 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Screenshot 2](screenshot/photoupload.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Caption for Screenshot 2.
+
+## Features
+
+- Feature 1
+- Feature 2
+- Feature 3
+
+## Installation
+
+1. Clone the repository.
+2. Run `flutter pub get` to install dependencies.
+3. Run the app using `flutter run`.
+
+## Usage
+
+Explain how to use your project or provide code examples.
+
+```dart
+// Code example goes here

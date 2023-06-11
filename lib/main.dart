@@ -10,7 +10,7 @@ class PhotoGalleryApp extends StatelessWidget {
     return MaterialApp(
       title: 'Photo Gallery',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepOrange,
       ),
       home: PhotoGalleryScreen(),
     );
@@ -61,7 +61,7 @@ class PhotoGalleryScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.network(
-                          'https://example.com/photo1.jpg',
+                          'https://freepngimg.com/thumb/tree/1-tree-png-image-download-picture.png',
                           width: 100,
                           height: 100,
                           fit: BoxFit.cover,
@@ -81,7 +81,7 @@ class PhotoGalleryScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.network(
-                          'https://example.com/photo2.jpg',
+                          'https://freepngimg.com/thumb/tree/12-tree-png-image-download-picture.png',
                           width: 100,
                           height: 100,
                           fit: BoxFit.cover,
@@ -105,7 +105,7 @@ class PhotoGalleryScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.network(
-                          'https://example.com/photo3.jpg',
+                          'https://freepngimg.com/thumb/tree/11-tree-png-image-download-picture.png',
                           width: 100,
                           height: 100,
                           fit: BoxFit.cover,
@@ -125,7 +125,7 @@ class PhotoGalleryScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.network(
-                          'https://example.com/photo4.jpg',
+                          'https://freepngimg.com/thumb/tree/3-tree-png-image-download-picture.png',
                           width: 100,
                           height: 100,
                           fit: BoxFit.cover,
@@ -149,7 +149,7 @@ class PhotoGalleryScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.network(
-                          'https://example.com/photo5.jpg',
+                          'https://freepngimg.com/thumb/tree/23-tree-png-image-download-picture.png',
                           width: 100,
                           height: 100,
                           fit: BoxFit.cover,
@@ -169,7 +169,7 @@ class PhotoGalleryScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Image.network(
-                          'https://example.com/photo6.jpg',
+                          'https://freepngimg.com/thumb/mountain/1-2-mountain-png-picture.png',
                           width: 100,
                           height: 100,
                           fit: BoxFit.cover,

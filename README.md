@@ -4,19 +4,15 @@ A brief description of your project.
 
 ## Screenshots
 
-![Screenshot 1](screenshot/photosnack.png)
+ <img src="screenshot/photosnack.png" alt="Screenshot 1" width="250" height="500">
 
 Photo Description with SnackBar Message 
 
-![Screenshot 2](screenshot/photoupload.png)
+ <img src="screenshot/photoupload.png" alt="Screenshot 2" width="250" height="500">
 
-Caption for Screenshot 2.
+Upload Button with Snackbar
 
-## Features
 
-- Feature 1
-- Feature 2
-- Feature 3
 
 ## Installation
 
@@ -28,5 +24,3 @@ Caption for Screenshot 2.
 
 Explain how to use your project or provide code examples.
 
-```dart
-// Code example goes here

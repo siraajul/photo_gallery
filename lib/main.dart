@@ -11,6 +11,7 @@ class PhotoGalleryApp extends StatelessWidget {
       title: 'Photo Gallery',
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
+        useMaterial3: false,
       ),
       home: PhotoGalleryScreen(),
     );
@@ -33,6 +34,7 @@ class PhotoGalleryScreen extends StatelessWidget {
               padding: EdgeInsets.all(16.0),
               child: Text(
                 'Welcome to My Photo Gallery!',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
@@ -52,134 +54,138 @@ class PhotoGalleryScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 16.0),
-            Row(
+            Column(
               children: [
-                Expanded(
-                  child: ElevatedButton(
-                    onPressed: () {
-                      showSnackBar(context, 'Clicked on photo 1!');
-                    },
-                    child: Column(
-                      children: [
-                        Image.network(
-                          'https://freepngimg.com/thumb/tree/1-tree-png-image-download-picture.png',
-                          width: 100,
-                          height: 100,
-                          fit: BoxFit.cover,
+                Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          showSnackBar(context, 'Clicked on photo 1!');
+                        },
+                        child: Column(
+                          children: [
+                            Image.network(
+                              'https://freepngimg.com/thumb/tree/1-tree-png-image-download-picture.png',
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 8.0),
+                            Text('Photo 1'),
+                          ],
                         ),
-                        SizedBox(height: 8.0),
-                        Text('Photo 1'),
-                      ],
+                      ),
                     ),
-                  ),
+                    SizedBox(width: 8.0),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          showSnackBar(context, 'Clicked on photo 2!');
+                        },
+                        child: Column(
+                          children: [
+                            Image.network(
+                              'https://freepngimg.com/thumb/tree/12-tree-png-image-download-picture.png',
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 8.0),
+                            Text('Photo 2'),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-                SizedBox(width: 8.0),
-                Expanded(
-                  child: ElevatedButton(
-                    onPressed: () {
-                      showSnackBar(context, 'Clicked on photo 2!');
-                    },
-                    child: Column(
-                      children: [
-                        Image.network(
-                          'https://freepngimg.com/thumb/tree/12-tree-png-image-download-picture.png',
-                          width: 100,
-                          height: 100,
-                          fit: BoxFit.cover,
+                SizedBox(height: 8.0),
+                Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          showSnackBar(context, 'Clicked on photo 3!');
+                        },
+                        child: Column(
+                          children: [
+                            Image.network(
+                              'https://freepngimg.com/thumb/tree/11-tree-png-image-download-picture.png',
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 8.0),
+                            Text('Photo 3'),
+                          ],
                         ),
-                        SizedBox(height: 8.0),
-                        Text('Photo 2'),
-                      ],
+                      ),
                     ),
-                  ),
+                    SizedBox(width: 8.0),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          showSnackBar(context, 'Clicked on photo 4!');
+                        },
+                        child: Column(
+                          children: [
+                            Image.network(
+                              'https://freepngimg.com/thumb/tree/3-tree-png-image-download-picture.png',
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 8.0),
+                            Text('Photo 4'),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
-            SizedBox(height: 8.0),
-            Row(
-              children: [
-                Expanded(
-                  child: ElevatedButton(
-                    onPressed: () {
-                      showSnackBar(context, 'Clicked on photo 3!');
-                    },
-                    child: Column(
-                      children: [
-                        Image.network(
-                          'https://freepngimg.com/thumb/tree/11-tree-png-image-download-picture.png',
-                          width: 100,
-                          height: 100,
-                          fit: BoxFit.cover,
+                SizedBox(height: 8.0),
+                Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          showSnackBar(context, 'Clicked on photo 5!');
+                        },
+                        child: Column(
+                          children: [
+                            Image.network(
+                              'https://freepngimg.com/thumb/tree/23-tree-png-image-download-picture.png',
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 8.0),
+                            Text('Photo 5'),
+                          ],
                         ),
-                        SizedBox(height: 8.0),
-                        Text('Photo 3'),
-                      ],
+                      ),
                     ),
-                  ),
-                ),
-                SizedBox(width: 8.0),
-                Expanded(
-                  child: ElevatedButton(
-                    onPressed: () {
-                      showSnackBar(context, 'Clicked on photo 4!');
-                    },
-                    child: Column(
-                      children: [
-                        Image.network(
-                          'https://freepngimg.com/thumb/tree/3-tree-png-image-download-picture.png',
-                          width: 100,
-                          height: 100,
-                          fit: BoxFit.cover,
+                    SizedBox(width: 8.0),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: () {
+                          showSnackBar(context, 'Clicked on photo 6!');
+                        },
+                        child: Column(
+                          children: [
+                            Image.network(
+                              'https://freepngimg.com/thumb/mountain/1-2-mountain-png-picture.png',
+                              width: 100,
+                              height: 100,
+                              fit: BoxFit.cover,
+                            ),
+                            SizedBox(height: 8.0),
+                            Text('Photo 6'),
+                          ],
                         ),
-                        SizedBox(height: 8.0),
-                        Text('Photo 4'),
-                      ],
+                      ),
                     ),
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(height: 8.0),
-            Row(
-              children: [
-                Expanded(
-                  child: ElevatedButton(
-                    onPressed: () {
-                      showSnackBar(context, 'Clicked on photo 5!');
-                    },
-                    child: Column(
-                      children: [
-                        Image.network(
-                          'https://freepngimg.com/thumb/tree/23-tree-png-image-download-picture.png',
-                          width: 100,
-                          height: 100,
-                          fit: BoxFit.cover,
-                        ),
-                        SizedBox(height: 8.0),
-                        Text('Photo 5'),
-                      ],
-                    ),
-                  ),
-                ),
-                SizedBox(width: 8.0),
-                Expanded(
-                  child: ElevatedButton(
-                    onPressed: () {
-                      showSnackBar(context, 'Clicked on photo 6!');
-                    },
-                    child: Column(
-                      children: [
-                        Image.network(
-                          'https://freepngimg.com/thumb/mountain/1-2-mountain-png-picture.png',
-                          width: 100,
-                          height: 100,
-                          fit: BoxFit.cover,
-                        ),
-                        SizedBox(height: 8.0),
-                        Text('Photo 6'),
-                      ],
-                    ),
-                  ),
+                  ],
                 ),
               ],
             ),
